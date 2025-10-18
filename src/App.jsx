@@ -98,6 +98,7 @@ function Board({ player, playerName, setCurrentPlayer }) {
       <div className={`board-row ${player === "X" ? "active " : ""}`}>
         {[1, 2, 3].map((v) => (
           <Sqaure
+            key={v}
             value={v}
             playerData={playerData}
             onSquareClick={() => handleClick(v)}
@@ -107,6 +108,7 @@ function Board({ player, playerName, setCurrentPlayer }) {
       <div className={`board-row ${player === "X" ? "active " : ""}`}>
         {[4, 5, 6].map((v) => (
           <Sqaure
+            key={v}
             value={v}
             playerData={playerData}
             onSquareClick={() => handleClick(v)}
@@ -116,6 +118,7 @@ function Board({ player, playerName, setCurrentPlayer }) {
       <div className={`board-row ${player === "X" ? "active " : ""}`}>
         {[7, 8, 9].map((v) => (
           <Sqaure
+            key={v}
             value={v}
             playerData={playerData}
             onSquareClick={() => handleClick(v)}
